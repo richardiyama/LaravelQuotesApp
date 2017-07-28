@@ -1,5 +1,6 @@
 @extends ('layouts.master')
 
+
 @section ('content')
 	<ul>
 		@foreach ($authors as $author)
