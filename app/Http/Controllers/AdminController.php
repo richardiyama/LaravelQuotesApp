@@ -19,6 +19,7 @@ class AdminController extends Controller
 		return redirect()->route('index');
 	}
 
+	
 	public function getDashboard(){
 		$authors = Author::all();
 		return view('admin.dashboard',['authors' => $authors]);
