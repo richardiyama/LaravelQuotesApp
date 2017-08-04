@@ -13,7 +13,8 @@ class QuoteController extends Controller{
 
 	public function getIndex($author = null ){
 
-     if(!is_null($author)){
+     
+   if(!is_null($author)){
      	$quote_author = Author::where('name',$author)->first();
      	if($quote_author){
      		$quotes = $quote_author->quotes()->orderBy('created_at','desc')->paginate(6);
