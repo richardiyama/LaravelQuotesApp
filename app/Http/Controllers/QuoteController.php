@@ -65,6 +65,7 @@ class QuoteController extends Controller{
 		}
 
 		$quote = new Quote();
+		
 		$quote ->quote = $quoteText;
 		$author ->quotes()->save($quote);
         Event::fire(new QuoteCreated($author));
