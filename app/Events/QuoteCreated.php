@@ -20,6 +20,7 @@ class QuoteCreated
      *
      * @return void
      */
+   
     public function __construct($author)
     {
         $this->author_name = $author->name;
