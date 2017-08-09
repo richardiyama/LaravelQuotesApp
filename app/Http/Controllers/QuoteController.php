@@ -52,6 +52,7 @@ class QuoteController extends Controller{
 		$quoteText = $request['quote'];
 
 		$author = Author::where('name', $authorText)->first();
+		
 		if(!$author){
          $author = new Author();
          $author ->name = $authorText;
