@@ -61,6 +61,7 @@ class QuoteController extends Controller{
 	 $author ->email = $request['email'];
          
 	 $author->save();
+		
 		}
 
 		$quote = new Quote();
