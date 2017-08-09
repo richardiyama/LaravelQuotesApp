@@ -27,6 +27,7 @@ class AdminController extends Controller
 
 	
 	public function getDashboard(){
+		
 		$authors = Author::all();
 		return view('admin.dashboard',['authors' => $authors]);
 	}
