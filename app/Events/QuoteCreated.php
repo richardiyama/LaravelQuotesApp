@@ -42,6 +42,7 @@ class QuoteCreated
     
     public function broadcastOn()
     {
+        
         return new PrivateChannel('channel-name');
     }
 }
