@@ -48,6 +48,7 @@ class QuoteController extends Controller{
         	]);
 
 		$authorText = ucfirst($request['author'])  ;
+		
 		$quoteText = $request['quote'];
 
 		$author = Author::where('name', $authorText)->first();
