@@ -57,7 +57,8 @@ class QuoteController extends Controller{
          $author = new Author();
          
          $author ->name = $authorText;
-         $author ->email = $request['email'];
+         
+	 $author ->email = $request['email'];
          $author->save();
 		}
 
