@@ -44,6 +44,7 @@ class AdminController extends Controller
 			]);
 
 		if(!Auth::attempt(['name' => $request['name'], 'password' => $request['password']])){
+			
 			return redirect()->back()->with(['fail' => 'Could not log you in!']);
 		}
 
