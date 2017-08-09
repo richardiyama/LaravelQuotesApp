@@ -30,7 +30,8 @@ class QuoteController extends Controller{
 
      	
      }	
-     else{
+     
+    else{
      		$quotes = Quote::orderBy('created_at','desc')->paginate(6);
      	}	
       
