@@ -78,6 +78,7 @@ class QuoteController extends Controller{
 	}
 
 	public function getDeleteQuote($quote_id){
+		
 		$quote = Quote::find($quote_id);
 		$author_deleted = false;
 		if(count($quote->author->quotes)=== 1){
