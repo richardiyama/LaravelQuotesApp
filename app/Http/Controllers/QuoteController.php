@@ -7,6 +7,7 @@ use App\Author;
 use App\Quote;
 
 use App\AuthorLog;
+
 use Illuminate\Http\Request;
 use App\Events\QuoteCreated;
 use Illuminate\Support\Facades\Event;
