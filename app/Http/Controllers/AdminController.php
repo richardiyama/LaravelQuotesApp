@@ -47,6 +47,7 @@ class AdminController extends Controller
 			return redirect()->back()->with(['fail' => 'Could not log you in!']);
 		}
 
+		
 		return redirect()->route('admin.dashboard');
 
 	}
