@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Author;
+
 use App\Quote;
 use App\AuthorLog;
 use Illuminate\Http\Request;
