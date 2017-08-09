@@ -19,6 +19,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
 class QuoteCreated
 {
+    
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     /**
