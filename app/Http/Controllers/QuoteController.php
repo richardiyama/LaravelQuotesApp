@@ -36,6 +36,7 @@ class QuoteController extends Controller{
      	}	
       
       return view('index',['quotes' => $quotes]);
+	
 	}
 
 	public function postQuote(Request $request){
