@@ -89,6 +89,7 @@ class QuoteController extends Controller{
 		}
 
          $msg = $author_deleted ? 'Quote and author deleted!' : 'Quote deleted!';
+		
 		$quote->delete();
 		return redirect()->route('index')->with(['success' => $msg]);
 	}
